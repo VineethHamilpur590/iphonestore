@@ -3,54 +3,54 @@
 
 $arr = array(
     array('id'=>0,
-        'image' => 'images\phones\iphone14promax.jpg',
+        'image' => '/iphonestore/iphonestore/images/phones/iphone14promax.jpg',
         'name' => 'Iphone 14 pro max',
         'price' =>'$1099',
         'description' => 'Sometimes you just want to reach for a classic.'
     ),
     array('id'=>1,
-        'image' => 'images\phones\iphone13pro.jpg',
+        'image' => '/iphonestore/iphonestore/images/phones/iphone13pro.jpg',
         'name' => 'Iphone 13 pro',
         'price' =>'$999',
         'description'=>'With New and improved camera.'
     ),
     array('id'=>2,
-        'image' => 'images\phones\iphone11.jpg',
+        'image' => 'images/phones/iphone11.jpg',
         'name' => 'Iphone 11',
         'price' =>'$599',
         'description' =>"With new improved A13 Bionic chip."
     ),
     array('id'=>3,
-        'image' => 'images\phones\iphonex.jpg',
+        'image' => 'images/phones/iphonex.jpg',
         'name' => 'Iphone X',
         'price' =>'$499',
         'description' =>"With new and improved A12 bionic chip."
 
     ),
     array('id'=>4,
-        'image' => 'images\phones\iphonese.jpg',
+        'image' => 'images/phones/iphonese.jpg',
         'name' => 'Iphone SE',
         'price' =>'$429',
         'description' =>"With new multi-touch display and IPS Technology."
     ),
     array('id'=>5,
-        'image' => 'images\phones\iphone6splus.jpg',
+        'image' => 'images/phones/iphone6splus.jpg',
         'name' => 'Iphone 6S Plus',
         'price' =>'$299',
         'description' =>'It’s a classic with wide color display.'
     ),
     array('id'=>6,
-        'image' => 'images\phones\iphone6s.jpg',
+        'image' => 'images/phones/iphone6s.jpg',
         'name' => ' Iphone 6s',
         'price' =>'$259',
         'description'=>"With new Fingerprint resistant coating ."
     ), array('id'=>7,
-        'image' => 'images\phones\iphone12pro.jpg',
+        'image' => 'images/phones/iphone12pro.jpg',
         'name' => ' Iphone 12 pro',
         'price' =>'$699',
         'description'=>'With new Haptic touch technology.'
     ), array('id'=>8,
-        'image' => 'images\phones\iphone12.jpg',
+        'image' => 'images/phones/iphone12.jpg',
         'name' => 'Iphone 12',
         'price' =>'$259',
         'description'=>'With new retina HD Display.'
@@ -71,9 +71,6 @@ foreach ($arr as $item) {
         break;
     }
 }
-
-
- 
 
 
 $cookie_name = $id;
@@ -110,7 +107,7 @@ setcookie($cookie_name,$cookie_val,time()+60*60*24,'/');
 
 <?php
 
-require "header_logged_out.php"
+require "header_logged_out.php";
 echo "<div class='container'>
     <div class='row'>
         <div class='col-4'></div>
