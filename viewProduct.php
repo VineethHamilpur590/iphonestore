@@ -3,13 +3,13 @@
 
 $arr = array(
     array('id'=>0,
-        'image' => '/iphonestore/iphonestore/images/phones/iphone14promax.jpg',
+        'image' => '/iphonestore/images/phones/iphone14promax.jpg',
         'name' => 'Iphone 14 pro max',
         'price' =>'$1099',
         'description' => 'Sometimes you just want to reach for a classic.'
     ),
     array('id'=>1,
-        'image' => '/iphonestore/iphonestore/images/phones/iphone13pro.jpg',
+        'image' => 'images/phones/iphone13pro.jpg',
         'name' => 'Iphone 13 pro',
         'price' =>'$999',
         'description'=>'With New and improved camera.'
