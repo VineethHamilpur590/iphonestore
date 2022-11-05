@@ -169,7 +169,7 @@ if(!isset($_SESSION['id'])){
 		for($i=0;$i<9;$i++){
 
 			echo " <div class=' col-md-4 col-sm-6 col-xs-12' id='{$arr[$i]['id']}'>
-			<a href='/viewProduct.php?id={$arr[$i]['id']}'>
+			<a href='/iphonestore/viewProduct.php?id={$arr[$i]['id']}'>
 			<div class='panel panel-default'>
 				<div class='panel-heading' style='background-color:grey'></div>
 				<div class='panel-body'>
