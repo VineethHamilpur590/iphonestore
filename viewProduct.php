@@ -117,7 +117,7 @@ echo "<div class='container'>
             <p class = lead style='text-align: center; font-weight: bold'> Price : {$data['price']}</p>
             <br>
             <br>
-            <img src={$data['image']} class='img-fluid' alt=''>
+            <center><img src={$data['image']} class='img-fluid' alt=''></center>
         </div>
     </div>
     <br>
