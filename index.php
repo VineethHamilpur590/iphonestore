@@ -83,9 +83,9 @@ if(!isset($_SESSION['id'])){
 
 		for($i=0;$i<9;$i++){
 
-			echo " <div class=' col-md-4 col-sm-6 col-xs-12'>
- <a href='{$arr'
-			<div class='panel panel-default  '>
+			echo " <div class=' col-md-4 col-sm-6 col-xs-12' id='{$arr[$i]['id']}'>
+			<a href=`/viewProduct?id={$arr[$i]['id']}`>
+			<div class='panel panel-default'>
 				<div class='panel-heading' style='background-color:grey'></div>
 				<div class='panel-body'>
                                        
@@ -94,15 +94,16 @@ if(!isset($_SESSION['id'])){
                                         
                                     <!--   <a  data-toggle='modal' data-target='#pz' title='login to see full specification' ><span></span>specifications</a></center></center>-->
                                         
-//					<button class='btn btn-primary form-control' style='background-color:grey' type='button' value='Submit'  name='btn' data-toggle='modal' data-target='#pz'>Specifications</button>
+					<button class='btn btn-primary form-control' style='background-color:grey' type='button' value='Submit'  name='btn' data-toggle='modal' data-target='#pz'>Specifications</button>
 
 
 				</div>
 			</div>
+			</a>
 		</div>	";
 
 
-		}?>
+		}
                
                 
 			
