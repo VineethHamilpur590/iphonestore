@@ -126,7 +126,7 @@ for($i=0;$i<$end;$i++){
     echo "
             
             <div class='col-2'>
-            <a href='/viewProduct.php?id={$data[$i]['id']}'>
+            <a href='/iphonestore/viewProduct.php?id={$data[$i]['id']}'>
             
                 <img src={$data[$i]['image']} class='img-fluid' alt=''>
                 <br>
