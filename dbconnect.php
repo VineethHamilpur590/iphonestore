@@ -9,7 +9,7 @@ $password = "password";
 
 $dbname = "iphoneproductsdb";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new MySQLi($servername, $username, $password, $dbname);
 
 
 ?>
