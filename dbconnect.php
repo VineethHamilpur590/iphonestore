@@ -1,25 +1,22 @@
+
+
+
+
 <?php
-$host = "iphonedb.cd8it5oofcje.us-west-1.rds.amazonaws.com";
+$servername = "iphonedb.cd8it5oofcje.us-west-1.rds.amazonaws.com";
 $username = "root";
 $password = "password";
 
-// for local machine password=> Password@123
-// for remote
-//$password = "root";
-
 $dbname = "iphoneproductsdb";
 
-$dsn = "mysql:host=$host;dbname=$dbname;charset=UTF8";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
 
-try {
-	$pdo = new PDO($dsn, $username, $password);
-
-	if ($pdo) {
-		echo "Connected to the $dbname database successfully!";
-	}
-} catch (PDOException $e) {
-	echo $e->getMessage();
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
 }
-
+echo "Connected successfully";
+?>
 
 ?>
