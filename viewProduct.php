@@ -78,7 +78,8 @@ $cookie_val = time();
 setcookie($cookie_name,$cookie_val,time()+60*60*24,'/');
 
 require "dbconnect.php";
-$result = $conn->query("SELECT * FROM iphoneproductsdb.products; where id = " . $id . ";");
+$sql = "SELECT * FROM products where id={$id}";
+$result = $conn->query($sql);
 
 if (mysqli_num_rows($result) === 0) {
 

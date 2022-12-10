@@ -1,5 +1,5 @@
 <?php
-$servername = "iphonedb.cd8it5oofcje.us-west-1.rds.amazonaws.com1";
+$servername = "iphonedb.cd8it5oofcje.us-west-1.rds.amazonaws.com";
 $username = "root";
 $password = "password";
 
@@ -7,7 +7,7 @@ $password = "password";
 // for remote
 //$password = "root";
 
-$dbname = "iphonedb";
+$dbname = "iphoneproductsdb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
