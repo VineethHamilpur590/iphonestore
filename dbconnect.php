@@ -10,11 +10,11 @@ $password = "password";
 $dbname = "iphoneproductsdb";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli($servername, $username, $password,$dbname);
 
 // Check connection
 if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+  die("Connection failed: " . mysqli->errror);
 }
 echo "Connected successfully";
 ?>
