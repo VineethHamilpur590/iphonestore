@@ -1,5 +1,5 @@
 <?php
-$servername = "iphonedb.cd8it5oofcje.us-west-1.rds.amazonaws.com";
+$host = "iphonedb.cd8it5oofcje.us-west-1.rds.amazonaws.com";
 $username = "root";
 $password = "password";
 
@@ -9,13 +9,16 @@ $password = "password";
 
 $dbname = "iphoneproductsdb";
 
+$dsn = "mysql:host=$host;dbname=$dbname;charset=UTF8";
+
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "connected sucessfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+	$pdo = new PDO($dsn, $username, $password);
+
+	if ($pdo) {
+		echo "Connected to the $dbname database successfully!";
+	}
+} catch (PDOException $e) {
+	echo $e->getMessage();
 }
 
 
