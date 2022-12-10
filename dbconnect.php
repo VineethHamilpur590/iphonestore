@@ -9,6 +9,7 @@ $password = "password";
 
 $dbname = "iphoneproductsdb";
 
+try{
 // Create connection
 $conn = mysqli($servername, $username, $password,$dbname);
 
@@ -17,6 +18,9 @@ if (!$conn) {
   die("Connection failed: " . mysqli->errror);
 }
 echo "Connected successfully";
-?>
+
+}catch(Exception $e){
+  echo $e;
+}
 
 ?>
