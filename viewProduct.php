@@ -77,6 +77,25 @@ $cookie_name = $id;
 $cookie_val = time();
 setcookie($cookie_name,$cookie_val,time()+60*60*24,'/');
 
+require "dbconnect.php";
+$result = $conn->query("SELECT * FROM iphoneproductsdb.products; where id = " . $id . ";");
+
+if (mysqli_num_rows($result) === 0) {
+
+    $sql = "INSERT INTO iphoneproductsdb.products (id,name,price,count) values ('{$id}','{$data['name']}','{$data['price']}',1)";
+
+    $result2 = $conn->query($sql);
+
+
+}else{
+    while($row = $result -> fetch_assoc()){
+        //echo "number of rows: " . $result->num_rows;
+        $count =1+$row["count"];
+        $sql = "UPDATE iphoneproductsdb.products set count='{$count}' where id={$id}";
+        $result = $conn->query($sql);
+        break;
+    }
+}
 
 
 ?>
